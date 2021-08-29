@@ -11,13 +11,11 @@ public class Student {
 		System.out.println(studentName + ", " + address);
 	}
 	
-	/*
-	public static void main(String[] args) {
-		Student studentLee = new Student();
-		studentLee.studentName = "이순신";
-		studentLee.address = "서울시 노원구";
-		
-		studentLee.showStudentInfo();
+	public String getStudentName() {
+		return studentName;
 	}
-	*/
+	
+	public void setStudentName(String name) {
+		this.studentName = name;
+	}
 }
