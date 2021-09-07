@@ -8,12 +8,12 @@ public class Customer {
 	int bonusPoint;
 	protected double bonusRatio;
 	
-//	public Customer() {
-//		customerGrade = "SILVER";
-//		bonusRatio = 0.01;
-//		
-//		System.out.println("Customer() 호출");
-//	}
+	public Customer() {
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+		
+		System.out.println("Customer() 호출");
+	}
 	
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
@@ -21,7 +21,7 @@ public class Customer {
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
 		
-		System.out.println("Customer(int, string) 호출");
+//		System.out.println("Customer(int, string) 호출");
 	}
 	
 	public int calcPrice(int price) {

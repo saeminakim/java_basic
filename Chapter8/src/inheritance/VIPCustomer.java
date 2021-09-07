@@ -14,15 +14,21 @@ public class VIPCustomer extends Customer{
 //		System.out.println("VIPCustomer() 호출");
 //	}
 	
-	public VIPCustomer(int customerID, String customerName) {
+	public VIPCustomer(int customerID, String customerName, int agentID) {
 		// 만약 상위 클래스에서 매개변수가 있는 생성자를 사용한다면
 		// 아래처럼 명시적으로 super 클래스 호출
 		super(customerID, customerName); 
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
+		this.agentID = agentID;
 		
-		System.out.println("VIPCustomer(int, string) 호출");
+//		System.out.println("VIPCustomer(int, string) 호출");
+	}
+	
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		return price - (int)(price * saleRatio);
 	}
 	
 	public int getAgentID() {
