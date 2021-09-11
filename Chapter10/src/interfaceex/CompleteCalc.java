@@ -21,4 +21,12 @@ public class CompleteCalc extends Calculator {
 		System.out.println("Calc 인터페이스를 구현하였습니다.");
 	}
 
+	
+	// interface에서 정의한 디폴트 메소드 재정의
+	@Override
+	public void desciption() {
+		System.out.println("완벽한 계산기입니다.");
+	}
+
+	
 }
