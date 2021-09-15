@@ -32,6 +32,5 @@ public class ClassTest {
 		Person p2 = (Person) pClass.newInstance(); // 해당 클래스의 default constructor가 호출됨
 		System.out.println(p);
 		System.out.println(p2);
-	}
-
+	}	
 }
